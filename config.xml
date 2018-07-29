@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "bellas.artes"
+        version   = "0.1.0">
+	
+    <name>Bellas Artes</name>
+
+    <description>
+        App del Museo de Bellas Artes
+    </description>
+
+    <author href="http://www.davinci.edu.ar" email="vgarciatori@gmail.com">
+        	Victoria García Tori
+    </author>
+	
+	<platform name="android" />
+	
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+	<feature name="http://api.phonegap.com/1.0/network" />
+	<feature name="http://api.phonegap.com/1.0/geolocation" />
+	
+	<preference name="phonegap-version" value="cli-6.5.0" />
+	
+    <preference name="orientation" value="portrait" /> 
+	
+    <preference name="target-device" value="universal" /> 
+	
+    <preference name="fullscreen" value="false" /> 
+	
+    <preference name="webviewbounce" value="true" /> 
+	
+    <preference name="prerendered-icon" value="true" /> 
+	
+    <preference name="android-minSdkVersion" value="7" /> 
+	
+    <preference name="android-installLocation" value="auto" /> 
+	
+	<preference name="splashScreenDelay" value="4000" />
+	
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-device-orientation" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-geolocation" source="npm" />
+	
+    
+	<preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#0000ff" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+	
+    <icon src="img/logo-01.png" />
+	
+	
+		
+	<gap:splash src="img/splash-01.png" 
+		gap:platform="android" gap:density="hdpi" />
+		
+	<access origin="*" /> 	
+	
+    
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+   
+</widget>
