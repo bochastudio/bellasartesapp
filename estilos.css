@@ -1,4 +1,10 @@
 
+body{
+	width:430px;
+	height:838px;
+	padding: auto;
+}
+
 #titulo{
 	padding-left: 10px;
 	padding-top: 15px;
